@@ -1,4 +1,5 @@
-.layui-side{
+//侧边栏
+.admin-left{
     z-index: 1001;
     top: 0 !important;
     .layui-logo{
@@ -16,10 +17,149 @@
             display: flex;
             justify-content: space-around;
             padding: 10px 0;
+        }
+    }
+}
+
+//头部
+.admin-head{
+    .userlogin{
+        position: relative;
+        .userloginbtn{
+            padding: 0 20px;
+            line-height: 60px;
+            color: #FFFFFF;
+            padding: 0 20px;
+        }
+        .nav-list{
+            width: 100%;
+            display: none;
+            position: absolute;
+            border: 1px solid #888888;
+            border-top: 0;
+            li{
+                height: 40px;
+                line-height: 40px;
+                color: #000000;
+                text-align: center;
+            }
+            li:hover{
+                background: rgba(0,0,0,.2);
+            }
+        }
+    }
+    .goqthtml{
+        line-height: 60px;
+    }
+    .userlogin:hover{
+        .nav-list{
+            display: block
+        }
+    }
+}
+
+.head-a-list{
+    min-height: 250px;
+    .layui-col-md6{
+        height: 100%;
+    }
+}
+
+
+.admin-nav{
+    width: 100%;
+    line-height: 60px;
+    .nav-contenbtn{
+        display: block;
+        width: 100%;
+        height: 55px;
+        display: flex;
+        color: #FFFFFF;
+            span{
+                margin: 0 55px 0 20px;
+        }
+    }
+    .layui-nav-child{
+        width: 100%;
+        height: auto;
+        dd{
+            line-height: 50px;
+            color: #FFFFFF;
             a{
                 display: block;
-                width: 100%;
+                padding-left: 55px;
             }
         }
     }
 }
+
+.maxheight{
+    bottom: 0 !important;
+    .centen-box{
+        padding: 15px;
+        height: 100%;
+        background: #C0C0C0;
+    }
+}
+.kj-list{
+    li{
+        padding: 5px;
+        .bg-icon{
+            width: 100%;
+            background: #F8F8F8;
+            text-align: center;
+            padding: 15px 0;
+            margin-bottom: 5px;
+        }
+            
+    }
+    a{
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+}
+.db-centen{
+    a{
+        display: block;
+        width: 95%;
+        height: auto;
+        background: #f8f8f8;
+        padding: 0 15px 20px;
+        margin-bottom: 10px;
+        
+        h3{
+            line-height: 35px;
+        }
+        p{
+            color: #009688;
+            white-space: nowrap;
+        }
+    }
+}
+.db-centen:nth-child(n+3){
+    a{
+        margin-bottom: 0;
+    }
+}
+
+.admin-right-abox{
+    background: #FFFFFF;
+    min-height: 250px;
+    .admin-cententitle{
+        padding: 20px 15px 0;
+        line-height: 24px;
+        font-size: 14px;
+        color: #666666;
+    }
+}
+
+.echat-box{
+    padding: 0 15px;
+}
+.echat-box{
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+

@@ -1,22 +1,123 @@
-.layui-side {
+.admin-left {
   z-index: 1001;
   top: 0 !important; }
-  .layui-side .layui-logo {
+  .admin-left .layui-logo {
     width: 100%;
     color: rgba(255, 255, 255, 0.8);
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
     height: 60px;
     line-height: 60px;
     z-index: 1002; }
-  .layui-side .layui-nav {
+  .admin-left .layui-nav {
     width: 100%;
     margin-top: 60px; }
-    .layui-side .layui-nav .layui-nav-itemed {
+    .admin-left .layui-nav .layui-nav-itemed {
       display: flex;
       justify-content: space-around;
       padding: 10px 0; }
-      .layui-side .layui-nav .layui-nav-itemed a {
+
+.admin-head .userlogin {
+  position: relative; }
+  .admin-head .userlogin .userloginbtn {
+    padding: 0 20px;
+    line-height: 60px;
+    color: #FFFFFF;
+    padding: 0 20px; }
+  .admin-head .userlogin .nav-list {
+    width: 100%;
+    display: none;
+    position: absolute;
+    border: 1px solid #888888;
+    border-top: 0; }
+    .admin-head .userlogin .nav-list li {
+      height: 40px;
+      line-height: 40px;
+      color: #000000;
+      text-align: center; }
+    .admin-head .userlogin .nav-list li:hover {
+      background: rgba(0, 0, 0, 0.2); }
+.admin-head .goqthtml {
+  line-height: 60px; }
+.admin-head .userlogin:hover .nav-list {
+  display: block; }
+
+.head-a-list {
+  min-height: 250px; }
+  .head-a-list .layui-col-md6 {
+    height: 100%; }
+
+.admin-nav {
+  width: 100%;
+  line-height: 60px; }
+  .admin-nav .nav-contenbtn {
+    display: block;
+    width: 100%;
+    height: 55px;
+    display: flex;
+    color: #FFFFFF; }
+    .admin-nav .nav-contenbtn span {
+      margin: 0 55px 0 20px; }
+  .admin-nav .layui-nav-child {
+    width: 100%;
+    height: auto; }
+    .admin-nav .layui-nav-child dd {
+      line-height: 50px;
+      color: #FFFFFF; }
+      .admin-nav .layui-nav-child dd a {
         display: block;
-        width: 100%; }
+        padding-left: 55px; }
+
+.maxheight {
+  bottom: 0 !important; }
+  .maxheight .centen-box {
+    padding: 15px;
+    height: 100%;
+    background: #C0C0C0; }
+
+.kj-list li {
+  padding: 5px; }
+  .kj-list li .bg-icon {
+    width: 100%;
+    background: #F8F8F8;
+    text-align: center;
+    padding: 15px 0;
+    margin-bottom: 5px; }
+.kj-list a {
+  width: 100%;
+  display: block;
+  text-align: center; }
+
+.db-centen a {
+  display: block;
+  width: 95%;
+  height: auto;
+  background: #f8f8f8;
+  padding: 0 15px 20px;
+  margin-bottom: 10px; }
+  .db-centen a h3 {
+    line-height: 35px; }
+  .db-centen a p {
+    color: #009688;
+    white-space: nowrap; }
+
+.db-centen:nth-child(n+3) a {
+  margin-bottom: 0; }
+
+.admin-right-abox {
+  background: #FFFFFF;
+  min-height: 250px; }
+  .admin-right-abox .admin-cententitle {
+    padding: 20px 15px 0;
+    line-height: 24px;
+    font-size: 14px;
+    color: #666666; }
+
+.echat-box {
+  padding: 0 15px; }
+
+.echat-box {
+  position: relative;
+  height: 400px;
+  overflow: hidden; }
 
 /*# sourceMappingURL=index.css.map */
