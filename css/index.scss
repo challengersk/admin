@@ -1,3 +1,4 @@
+.clearmargin{margin: 0 !important;}
 //侧边栏
 .admin-left{
     z-index: 1001;
@@ -65,7 +66,7 @@
     }
 }
 
-
+//右侧管理导航
 .admin-nav{
     width: 100%;
     line-height: 60px;
@@ -97,10 +98,11 @@
     bottom: 0 !important;
     .centen-box{
         padding: 15px;
-        height: 100%;
+        height: auto;
         background: #C0C0C0;
     }
 }
+//快捷方式
 .kj-list{
     li{
         padding: 5px;
@@ -119,6 +121,7 @@
         text-align: center;
     }
 }
+//待办事项
 .db-centen{
     a{
         display: block;
@@ -143,6 +146,21 @@
     }
 }
 
+//echat图片
+.echat-box{
+    padding: 0 15px;
+}
+.echat-box{
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+.layui-tab-brief{
+    background: #FFFFFF;
+}
+
+ 
+//右侧公告
 .admin-right-abox{
     background: #FFFFFF;
     min-height: 250px;
@@ -153,13 +171,25 @@
         color: #666666;
     }
 }
+.admin-right-bbox{
+    background: #FFFFFF;
+    height: 224px;
+    .layui-pro{
+        margin: 50px 0 70px 0;
+    }
+    .layui-progress{
+        h3{
+            position: absolute;
+            top:-25px;
+            right: 0;
+        }
+        .layui-progress-text{
+            position: absolute;
+            top: -30px;
+            left: 0;
+            font-size: 28px;
+        }
+    }
+}
 
-.echat-box{
-    padding: 0 15px;
-}
-.echat-box{
-    position: relative;
-    height: 400px;
-    overflow: hidden;
-}
 

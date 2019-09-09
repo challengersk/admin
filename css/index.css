@@ -1,3 +1,6 @@
+.clearmargin {
+  margin: 0 !important; }
+
 .admin-left {
   z-index: 1001;
   top: 0 !important; }
@@ -71,7 +74,7 @@
   bottom: 0 !important; }
   .maxheight .centen-box {
     padding: 15px;
-    height: 100%;
+    height: auto;
     background: #C0C0C0; }
 
 .kj-list li {
@@ -103,6 +106,17 @@
 .db-centen:nth-child(n+3) a {
   margin-bottom: 0; }
 
+.echat-box {
+  padding: 0 15px; }
+
+.echat-box {
+  position: relative;
+  height: 400px;
+  overflow: hidden; }
+
+.layui-tab-brief {
+  background: #FFFFFF; }
+
 .admin-right-abox {
   background: #FFFFFF;
   min-height: 250px; }
@@ -112,12 +126,19 @@
     font-size: 14px;
     color: #666666; }
 
-.echat-box {
-  padding: 0 15px; }
-
-.echat-box {
-  position: relative;
-  height: 400px;
-  overflow: hidden; }
+.admin-right-bbox {
+  background: #FFFFFF;
+  height: 224px; }
+  .admin-right-bbox .layui-pro {
+    margin: 50px 0 70px 0; }
+  .admin-right-bbox .layui-progress h3 {
+    position: absolute;
+    top: -25px;
+    right: 0; }
+  .admin-right-bbox .layui-progress .layui-progress-text {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    font-size: 28px; }
 
 /*# sourceMappingURL=index.css.map */
