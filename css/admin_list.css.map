@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,WAAW;EACP,OAAO,EAAE,WAAW;EAEhB,6BAAW;IACP,OAAO,EAAE,KAAK;IACd,KAAK,EAAE,IAAI;IACX,MAAM,EAAE,IAAI",
+"sources": ["admin_list.scss"],
+"names": [],
+"file": "admin_list.css"
+}

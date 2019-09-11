@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--bootstrap-->
+		<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.css"/>
+		<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/comstyle.css"/>
+		<!--layui-->
+		<link rel="stylesheet" type="text/css" href="layui-v2.5.4/layui/css/layui.css"/>
+		<!--css-->
+		<link rel="stylesheet" type="text/css" href="css/admin_style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/admin_list.css"/>
+		<!--js-->
+		<script src="js/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="layui-v2.5.4/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+		<script src="bootstrap-3.3.7-dist/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="layui-layout-admin">
+			<!--头部-->
+			<div class="layui-header admin-head">
+				<div class="layui-nav layui-layout-left ml-20">
+					<div class="goqthtml">
+						<a href="#" title="前往网站前台"><i class="layui-icon font-size-18 text-middle layui-icon-website white"></i></a>
+					</div>
+				</div>
+				<div class="layui-nav layui-layout-right">
+					<div class="userlogin">
+						<a href="#" class="userloginbtn">admin<span class="layui-icon layui-icon-triangle-d"></span></a>
+						<ul class="nav-list background-white">
+							<li><a href="#" class="black">修改信息</a></li>
+							<li><a href="#" class="black">修改密码</a></li>
+							<li><a href="#" class="black">退出登录</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--侧边栏-->
+			<div class="layui-side layui-bg-black admin-left">
+				<div class="layui-logo">后台管理系统</div>
+				<ul class="layui-nav layui-nav-tree">
+					<li class="nav-conten admin-nav">
+						<a href="#" class="font-size-16 nav-contenbtn clearfix">
+							<i class="layui-icon layui-icon-home ml-20"></i>
+							<span>会员管理</span>
+							<i class="layui-icon layui-icon-triangle-d"></i>
+						</a>
+						<div class="layui-nav-child" id="nav-child">
+							<dd><a href="#">授权管理</a></dd>
+							<dd><a href="#">管理员中心</a></dd>
+						</div>
+					</li>
+					<li class="nav-conten admin-nav">
+						<a href="#" class="font-size-16 nav-contenbtn clearfix">
+							<i class="layui-icon layui-icon-home ml-20"></i>
+							<span>文章管理</span>
+							<i class="layui-icon layui-icon-triangle-d"></i>
+						</a>
+						<div class="layui-nav-child" id="nav-child">
+							<dd><a href="#">所有文章</a></dd>
+							<dd><a href="#">待审核文章</a></dd>
+							<dd><a href="#">审核未通过文章</a></dd>
+							<dd><a href="#">管理员文章发布</a></dd>
+						</div>
+					</li>
+					<li class="nav-conten admin-nav">
+						<a href="#" class="font-size-16 nav-contenbtn clearfix">
+							<i class="layui-icon layui-icon-home ml-20"></i>
+							<span>会员中心</span>
+							<i class="layui-icon layui-icon-triangle-d"></i>
+						</a>
+						<div class="layui-nav-child" id="nav-child">
+							<dd><a href="#">所有会员</a></dd>
+							<dd><a href="#">加黑会员</a></dd>
+							<dd><a href="#">禁言会员</a></dd>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="layui-body maxheight ">
+				<div class="layui-row centen-box">
+					<div class="background-white pt-20">
+						<div class="layui-card-header font-size-16">
+							管理员授权
+						</div>
+						<div class="admin-list">
+							<table class="layui-table">
+							  <colgroup>
+							    <col width="150">
+							    <col width="200">
+							    <col>
+							  </colgroup>
+							  <thead>
+							    <tr>
+							      <th>管理员编号</th>
+							      <th>头像</th>
+							      <th>昵称</th>
+							      <th>加入时间</th>
+							      <th>备注</th>
+							      <th>操作</th>
+							    </tr> 
+							  </thead>
+							  <tbody>
+							    <tr>
+							      <td>2019001</td>
+							      <td><img src="images/user.png" class="img-circle"></td>
+							      <td>贤心</td>
+							      <td>2016-11-29</td>
+							      <td>人生就像是一场修行</td>
+							      <td><a href="#" class="layui-btn">详情</a><a href="#" class="layui-btn">授予更多权限</a></td>
+							    </tr>
+							    <tr>
+							      <td>2019002</td>
+							      <td><img src="images/user.png" class="img-circle"></td>
+							      <td>许闲心</td>
+							      <td>2016-11-28</td>
+							      <td>1111</td>
+							      <td><a href="#" class="layui-btn">详情</a><a href="#" class="layui-btn">授予更多权限</a></td>
+							    </tr>
+							  </tbody>
+							</table>
+							<div class="layui-row mt-10">
+								<div class="layui-col-xs9">
+									
+								</div>
+								<div class="layui-col-xs3">
+									<a href="#" class="layui-btn">添加</a>
+									<a href="#" class="layui-btn">删除</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			$('.nav-conten').on('click','.nav-contenbtn',function(){
+				if($(this).parent().children('.layui-nav-child').css('display')=='none'){
+					$(this).parent().children('.layui-nav-child').show().parent().siblings().children('.layui-nav-child').hide()
+				}else{
+					$(this).parent().children('.layui-nav-child').hide()
+				}
+			})
+			$('.nav-conten').on('click','dd',function(){
+				$(this).parent().parent().siblings().children('.layui-nav-child').children('dd').removeClass('layui-this')
+				$(this).addClass('layui-this').siblings().removeClass('layui-this')
+			})
+			$('#exhat-box').on('click','.layui-icon',function(){
+				$($('#echat-imgbox .echart')[$(this).index()]).show().siblings().hide()
+			})
+		</script>
+	</body>
+</html>
